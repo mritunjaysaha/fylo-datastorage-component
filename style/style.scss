@@ -1,0 +1,52 @@
+$PaleBlue: hsl(243, 100%, 93%);
+$GrayishBlue: hsl(229, 7%, 55%);
+$DarkBlue: hsl(228, 56%, 26%);
+$VeryDarkBlue: hsl(229, 57%, 11%);
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: $VeryDarkBlue;
+    display: flex;
+}
+
+.fylo-container {
+    background-color: $DarkBlue;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 6em 2em 2em;
+    border-radius: 5px 75px 5px 5px;
+    .logo {
+        padding-bottom: 1em;
+
+        img {
+            width: 6em;
+        }
+    }
+
+    .contents {
+        display: flex;
+        justify-content: space-between;
+        .contents-background {
+            flex: 1;
+            background-color: $VeryDarkBlue;
+            margin: 0 0.2em;
+            padding: 0.6em;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+
+            img {
+            }
+        }
+    }
+}
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
