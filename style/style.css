@@ -213,8 +213,8 @@ body {
 .progress-bar-container .progress-bar-indicator {
   width: 75%;
   height: 1em;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(60%, #ffa399), color-stop(70%, #ff4d97));
-  background-image: linear-gradient(90deg, #ffa399 60%, #ff4d97 70%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(60%, #ffa399), color-stop(90%, #ff4d97));
+  background-image: linear-gradient(90deg, #ffa399 60%, #ff4d97 90%);
   border-radius: 15px;
 }
 
