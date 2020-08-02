@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5,9 +6,40 @@
 
 body {
   background-color: #0c122c;
+  background-image: url(../images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #dddbff;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 21%;
 }
 
 .fylo-container {
@@ -19,16 +51,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 2em 6em 2em 2em;
   border-radius: 5px 75px 5px 5px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .fylo-container .logo {
-  padding-bottom: 1em;
+  padding: 2em 0;
 }
 
 .fylo-container .logo img {
-  width: 6em;
+  width: 8em;
 }
 
 .fylo-container .contents {
@@ -38,6 +76,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0;
 }
 
 .fylo-container .contents .contents-background {
@@ -45,15 +84,162 @@ body {
       -ms-flex: 1;
           flex: 1;
   background-color: #0c122c;
-  margin: 0 0.2em;
+  margin: 0 0.4em;
   padding: 0.6em;
-  border-radius: 5px;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.fylo-container .contents .contents-background img {
+  padding: 0.2em;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.data-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  z-index: 100;
+  top: 4em;
+  right: 2em;
+}
+
+.data-container .data-left {
+  background-color: #fff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #0c122c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5em 1em;
+  border-radius: 5px 5px 0px 5px;
+}
+
+.data-container .data-left p {
+  margin-left: 1em;
+}
+
+.data-container .arrow {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: inherit;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 10px;
+  height: 10px;
+  border-left: 20px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 20px solid #fff;
+}
+
+.progress-bar-container {
+  background-color: #1d2c67;
+  margin-left: 2em;
+  padding: 2em;
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.progress-bar-container .progress-bar {
+  background-color: #0c122c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1.4em;
+  padding: 0.2em;
+  border-radius: 15px;
+}
+
+.progress-bar-container .progress-bar-indicator {
+  width: 75%;
+  height: 1em;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(60%, #ffa399), color-stop(70%, #ff4d97));
+  background-image: linear-gradient(90deg, #ffa399 60%, #ff4d97 70%);
+  border-radius: 15px;
+}
+
+.progress-bar-container .progress-bar-marker {
+  background-color: #fff;
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 50%;
+  position: relative;
+  left: -1em;
+}
+
+.progress-bar-container .size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .attribution {

@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+$Gradient: linear-gradient(
+    90deg,
+    hsl(6, 100%, 80%) 60%,
+    hsl(335, 100%, 65%) 70%
+);
 $PaleBlue: hsl(243, 100%, 93%);
 $GrayishBlue: hsl(229, 7%, 55%);
 $DarkBlue: hsl(228, 56%, 26%);
@@ -7,38 +13,141 @@ $VeryDarkBlue: hsl(229, 57%, 11%);
 }
 body {
     background-color: $VeryDarkBlue;
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: $PaleBlue;
 }
-
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 21%;
+}
 .fylo-container {
     background-color: $DarkBlue;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 2em 6em 2em 2em;
     border-radius: 5px 75px 5px 5px;
+    height: max-content;
     .logo {
-        padding-bottom: 1em;
-
+        padding: 2em 0;
         img {
-            width: 6em;
+            width: 8em;
         }
     }
 
     .contents {
         display: flex;
         justify-content: space-between;
+        padding: 0;
         .contents-background {
             flex: 1;
             background-color: $VeryDarkBlue;
-            margin: 0 0.2em;
+            margin: 0 0.4em;
             padding: 0.6em;
-            border-radius: 5px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
-
             img {
+                padding: 0.2em;
             }
         }
+    }
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+.data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: max-content;
+    position: relative;
+    z-index: 100;
+    top: 4em;
+    right: 2em;
+    .data-left {
+        background-color: #fff;
+        width: max-content;
+        color: $VeryDarkBlue;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.5em 1em;
+        border-radius: 5px 5px 0px 5px;
+        p {
+            margin-left: 1em;
+        }
+    }
+    .arrow {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: inherit;
+        align-items: flex-end;
+        width: 10px;
+        height: 10px;
+        border-left: 20px solid transparent;
+        border-right: 0px solid transparent;
+
+        border-top: 20px solid #fff;
+    }
+}
+.progress-bar-container {
+    background-color: $DarkBlue;
+    margin-left: 2em;
+    padding: 2em;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    z-index: 0;
+    .progress-bar {
+        background-color: $VeryDarkBlue;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 1.4em;
+        padding: 0.2em;
+        border-radius: 15px;
+    }
+    .progress-bar-indicator {
+        width: 75%;
+        height: 1em;
+        background-image: $Gradient;
+        border-radius: 15px;
+    }
+
+    .progress-bar-marker {
+        background-color: #fff;
+        height: 0.8em;
+        width: 0.8em;
+        border-radius: 50%;
+        position: relative;
+        left: -1em;
+    }
+
+    .size {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 14px;
+        font-weight: 700;
     }
 }
 .attribution {
