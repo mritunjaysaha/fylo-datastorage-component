@@ -251,4 +251,46 @@ body {
 .attribution a {
   color: #3e52a3;
 }
+
+@media only screen and (max-width: 992px) {
+  body {
+    background-image: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .progress-bar-container {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0;
+  }
+  .data-container {
+    top: 14em;
+    right: 0;
+    margin: 0 auto;
+    margin-top: -2em;
+  }
+  .data-container .data-left {
+    border-radius: 5px;
+  }
+  .data-container .data-left h3 {
+    line-height: 0;
+    font-size: 1.5em;
+  }
+  .data-container .arrow {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
